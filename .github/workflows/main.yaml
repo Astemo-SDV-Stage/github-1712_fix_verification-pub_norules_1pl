@@ -1,0 +1,12 @@
+name: Main
+
+on:
+  push:
+    branches:
+      - "*"
+
+jobs:
+  integration-test:
+    name: IntegrationTest
+    uses: ./.github/workflows/integration-test.yaml
+    secrets: inherit
